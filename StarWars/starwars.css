@@ -110,7 +110,7 @@ body {
 
 .star-wars-logo {
   object-fit: cover;
-  fill: #07080b;
+  fill: #07080b !important;
 
   height: 16.5vh;
   width: 15vw;
