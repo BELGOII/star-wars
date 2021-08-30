@@ -1,5 +1,6 @@
 :root {
-  --header-height: 100px;
+  --slide-width: 80vw;
+  --header-height: 8vw;
 }
 
 body {
@@ -49,10 +50,10 @@ body {
   margin: 5px;
   padding: 10px;
   position: absolute;
-  width: 500px;
+  width: 38%;
   right: 70px;
   height: 25px;
-  left: 750px;
+  left: 59%;
   background-color: #2f3640;
   /* border-radius: 40px; */
 }
@@ -67,12 +68,12 @@ body {
   color: white;
   font-size: 16px;
   transition: 0.4s;
-  width: 450px;
+  width: 90%;
   height: 25px;
 }
 
 .search-icon {
-  left: 470px;
+  left: 90%;
   position: absolute;
   height: 25px;
   width: 25px;
@@ -91,21 +92,36 @@ body {
   padding: 10px;
   text-align: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.category-buttons {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgb(148, 145, 145);
+  background-color: #07080b;
+  border: none;
+}
+
+.category-buttons:hover {
+  color: white;
 }
 
 .star-wars-logo {
   object-fit: cover;
   fill: #07080b;
 
-  height: 100px;
-  width: 150px;
+  height: 16.5vh;
+  width: 15vw;
 }
 .star-wars-slide-image {
-  width: 900px;
-  min-width: 900px;
-  height: 400px;
+  width: 80vw;
+  min-width: 80vw;
+  height: 67vh;
   /* object-fit: cover; */
-  background-size: cover;
+  background-size: 80vw 67vh;
+  background-repeat: no-repeat;
 }
 
 .slides {
@@ -121,10 +137,57 @@ body {
 
 #slide-view {
   position: relative;
-  height: 400px;
-  width: 900px;
-  /* overflow-x: hidden; */
+  height: 67vh;
+  width: 80vw;
+  overflow-x: hidden;
   margin-top: 50px;
   margin-left: 50%;
-  transform: translateX(-450px);
+  margin-bottom: 50px;
+  transform: translateX(calc(var(--slide-width) / -2));
+}
+
+.bad-batch {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.video-underline {
+  position: relative;
+  width: 30px;
+  height: 1px;
+  background-color: rgb(202, 18, 18);
+  margin: auto;
+  filter: blur(0.7px);
+}
+.films-underline {
+  position: relative;
+  width: 30px;
+  height: 1px;
+  background-color: rgb(202, 18, 18);
+  margin: auto;
+  filter: blur(0.7px);
+}
+.interactive-underline {
+  position: relative;
+  width: 30px;
+  height: 1px;
+  background-color: rgb(202, 18, 18);
+  margin: auto;
+  filter: blur(0.7px);
+}
+.series-underline {
+  position: relative;
+  width: 30px;
+  height: 1px;
+  background-color: rgb(202, 18, 18);
+  margin: auto;
+  filter: blur(0.7px);
+}
+
+.databank-underline {
+  position: relative;
+  width: 30px;
+  height: 1px;
+  background-color: rgb(202, 18, 18);
+  margin: auto;
+  filter: blur(0.7px);
 }
